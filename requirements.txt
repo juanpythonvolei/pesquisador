@@ -1,6 +1,5 @@
 beautifulsoup4
 pandas
-protobuf
 Request
 SQLAlchemy
 streamlit
