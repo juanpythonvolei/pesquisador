@@ -1,6 +1,5 @@
 beautifulsoup4
 pandas
-Request
 SQLAlchemy
 streamlit
 urllib3
