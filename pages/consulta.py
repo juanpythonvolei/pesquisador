@@ -4,6 +4,8 @@ from analista import *
 from models import *
 from database import *
 import streamlit as st
+import speech_recognition as sr 
+
 
 tab1,tab2 = st.tabs(['consulta','teste'])
 with tab1:
@@ -32,5 +34,9 @@ with tab2:
     audio_value = st.experimental_audio_input("Record a voice message")
     
     if audio_value:
-        st.audio(audio_value)
-        st.write(audio_value)
+        rec = sr.Recognizer()
+
+        with sr.AudioFile(audio_value) as arquivo_audio:
+            audio = rec.record(arquivo_audio)
+            texto = rec.recognize_google(audio,language ='pt-BR ')
+            st.write(texto)
