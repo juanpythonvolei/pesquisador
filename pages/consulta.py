@@ -39,4 +39,4 @@ with tab2:
         with sr.AudioFile(audio_value) as arquivo_audio:
             audio = rec.record(arquivo_audio)
             texto = rec.recognize_google(audio,language ='pt-BR ')
-            st.write(texto)
+        st.info(analisar(texto,"Só sei que nada sei")
