@@ -5,3 +5,5 @@ streamlit
 urllib3
 google-generativeai
 openpyxl
+speech_recognition 
+
