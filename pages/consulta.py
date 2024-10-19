@@ -29,7 +29,7 @@ with tab1:
 with tab2:
     
 
-audio_value = st.experimental_audio_input("Record a voice message")
-
-if audio_value:
-    st.audio(audio_value
+    audio_value = st.experimental_audio_input("Record a voice message")
+    
+    if audio_value:
+        st.audio(audio_value
