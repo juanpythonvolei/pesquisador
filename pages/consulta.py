@@ -33,3 +33,4 @@ with tab2:
     
     if audio_value:
         st.audio(audio_value)
+        st.write(audio_value)
